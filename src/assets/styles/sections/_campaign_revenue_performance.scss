@@ -1,0 +1,131 @@
+.campaign-revenue-performance {
+  .campaign-performance {
+    width: 70%;
+    .table {
+      border: 0.1rem solid rgba(0, 0, 0, 0.276);
+      border-radius: 0.8rem;
+
+      .caption {
+        padding: 1.2rem 2.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.276);
+
+        h3 {
+          font-size: 2.2rem;
+          line-height: 3.4rem;
+          font-weight: 600;
+        }
+
+        .searching {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+
+          .search-wrapper {
+            display: flex;
+            border: 0.1rem solid #ecf0f1;
+            border-radius: 0.8rem;
+            align-items: stretch;
+            background-color: #ecf0f1;
+            overflow: hidden;
+            //max-width: 3.8rem;
+
+            img {
+              margin: 1rem;
+
+              &:hover {
+                cursor: pointer;
+              }
+            }
+
+            .search {
+              border: none;
+              font-size: 1.6rem;
+              transition: 5ms ease all;
+
+              &.w-0 {
+                width: 0;
+              }
+              &.w-full {
+                width: 100%;
+                padding: 0 0.8rem;
+              }
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+
+          label {
+            background-color: #ecf0f1;
+            padding: 0.7rem 1rem;
+            border-radius: 0.8rem;
+
+            color: #888888;
+
+            select {
+              border: 0;
+              outline: 0;
+              background-color: #ecf0f1;
+            }
+          }
+        }
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        padding: 1.2rem 2.6rem;
+        display: table;
+        table-layout: fixed;
+
+        thead tr {
+          border-bottom: 0.1rem solid rgba(0, 0, 0, 0.276);
+
+          td,
+          th {
+            padding: 1.6rem;
+          }
+        }
+
+        tbody tr {
+          border-bottom: 0.1rem solid rgba(0, 0, 0, 0.276);
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          td {
+            padding: 1rem 1.6rem;
+
+            .comment-body {
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-line-clamp: 2; /* number of lines to show */
+              line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+          }
+        }
+
+        th,
+        td {
+          //border: 1px solid rgba(0, 0, 0, 0.276);
+          text-align: left;
+          //padding: 8px;
+        }
+
+        tr:nth-child(even) {
+          background-color: #ecf0f1;
+        }
+      }
+    }
+  }
+
+  .revenue-channels {
+    width: 30%;
+  }
+}

@@ -1,7 +1,7 @@
 import NavLink from './NavLink.tsx';
-import { NavItemInterface } from '../Models/Navbar.ts';
+import { INavItem } from '../Models/Navbar.ts';
 
-type NavItemType = Omit<NavItemInterface, 'id'>;
+type NavItemType = Omit<INavItem, 'id'>;
 export default function NavItem({ imgUrl, label, url }: NavItemType) {
   return (
     <li>

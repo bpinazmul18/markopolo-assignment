@@ -1,4 +1,4 @@
-export interface NavItemInterface {
+export interface INavItem {
   id: number;
   label: string;
   imgUrl: string;

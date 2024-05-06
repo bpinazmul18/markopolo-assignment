@@ -1,6 +1,6 @@
-import { NavItemInterface } from '../Models/Navbar.ts';
+import { INavItem } from '../Models/Navbar.ts';
 
-export const navitems: NavItemInterface[] = [
+export const navitems: INavItem[] = [
   { id: 1, imgUrl: './images/dashboard.svg', label: 'Dashboard', url: '/dashboard' },
   { id: 2, imgUrl: './images/analytics.svg', label: 'Revenue Analytics', url: '/revenue-analytics' },
   { id: 3, imgUrl: './images/journeys.svg', label: 'Journeys', url: '/journeys' },
