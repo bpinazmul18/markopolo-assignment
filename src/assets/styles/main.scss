@@ -1,14 +1,21 @@
 @use './variables.scss' as *;
 
-//example
-body {
-  //background: $secondary;
-  font-size: 16px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-h1 {
-  //color: $primary;
-  border: 5px solid $accent;
-  padding: 0.5rem 1rem;
-  font-family: $font-stack;
+body {
+  font-family: $primary-font;
+  text-rendering: optimizeLegibility;
+  line-height: 1.3;
+  font-size: 1.6rem;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }

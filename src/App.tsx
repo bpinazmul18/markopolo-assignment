@@ -1,10 +1,13 @@
 import './assets/styles/main.scss';
+import Sidebar from './components/Sidebar.tsx';
+import MainContent from './components/MainContent.tsx';
 
 function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <main>
+      <Sidebar />
+      <MainContent />
+    </main>
   );
 }
 
