@@ -1,4 +1,7 @@
 .campaign-revenue-performance {
+  display: flex;
+  gap: 1rem;
+
   .campaign-performance {
     width: 70%;
     .table {
@@ -127,5 +130,32 @@
 
   .revenue-channels {
     width: 30%;
+    border: 0.1rem solid rgba(0, 0, 0, 0.276);
+    border-radius: 0.8rem;
+    padding: 1.2rem 2.6rem;
+
+    .revenue-box {
+      &_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+
+        h3 {
+          font-size: 2.2rem;
+          line-height: 3.4rem;
+          font-weight: 600;
+        }
+
+        &_arrow-right {
+          width: 2rem;
+          height: 2rem;
+          background-color: #ecf0f1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
   }
 }

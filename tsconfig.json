@@ -18,7 +18,8 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "@typescript-eslint/no-explicit-any": "off"
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
