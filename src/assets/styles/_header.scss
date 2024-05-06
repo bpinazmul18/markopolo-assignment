@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #1a1a1a;
+    text-transform: capitalize;
+  }
+
+  .search-wrapper {
+    display: flex;
+    border: 0.1rem solid rgba(0, 0, 0, 0.276);
+    border-radius: 0.8rem;
+    align-items: stretch;
+    background-color: #fff;
+    overflow: hidden;
+    max-width: 40rem;
+
+    img {
+      margin: 1rem;
+    }
+
+    .search {
+      border: none;
+      width: 33.5rem;
+      font-size: 1.6rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
