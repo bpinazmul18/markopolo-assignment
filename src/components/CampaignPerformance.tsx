@@ -4,7 +4,7 @@ import TableItem from './TableItem.tsx';
 import { useGetCommentsQuery } from '../services/comments.ts';
 
 export default function CampaignPerformance() {
-  const { data: comments } = useGetCommentsQuery();
+  const { data: comments } = useGetCommentsQuery({ _start: 0, limit: 4 });
 
   return (
     <div className="campaign-performance">
