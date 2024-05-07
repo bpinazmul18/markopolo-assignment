@@ -5,12 +5,8 @@ const homeApi = api.injectEndpoints({
   endpoints: (builder) => ({
     getComments: builder.query<IGetCommentsResponse[], { _start: number; limit: number }>({
       query: ({ _start, limit }) => ({
-        url: '/comments?_start=1&_limit=4',
+        url: `/comments?_start=${_start}&_limit=${limit}`,
         method: 'get',
-        params: {
-          _start,
-          limit,
-        },
       }),
     }),
   }),

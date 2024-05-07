@@ -7,7 +7,7 @@ import { useGetUsersQuery } from '../services/user.ts';
 
 export default function ResourcesSummery() {
   const { data: posts } = useGetPostsQuery();
-  const { data: comments } = useGetCommentsQuery({ _start: 0, limit: 0 });
+  const { data: comments } = useGetCommentsQuery({ _start: 1, limit: 0 });
   const { data: albums } = useGetAlbumsQuery();
   const { data: users } = useGetUsersQuery();
 
